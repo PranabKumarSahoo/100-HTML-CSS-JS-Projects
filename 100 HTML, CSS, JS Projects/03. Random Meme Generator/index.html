@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="bodyLoad()">
+    <div id="main">
+        <div class="container">
+            <button id="generate-btn" onclick="GenerateMeme()">Generate</button>
+            <p id="meme-title">Loading...</p>
+            <div>
+                <img id="meme-img" src="" border="1">
+            </div>
+            <p id="meme-author"></p>
+        </div>
+        <div class="creator">
+            <p>Made by @<a href="#">Pranab</a></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
