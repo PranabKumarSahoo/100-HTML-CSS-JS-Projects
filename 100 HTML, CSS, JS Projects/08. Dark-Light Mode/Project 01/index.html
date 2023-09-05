@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Mode</title>
+    <style>
+        body {
+            font-family: Arial;
+            transition: 0.3s ease-in-out;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input {
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="optTheme" onchange="switchTheme()">
+    </div>
+
+
+    <script>
+        const switchTheme = () => {
+            var checkbox = document.getElementById("optTheme");
+            if (checkbox.checked == true) {
+                document.querySelector("body").style.backgroundColor = "black";
+                document.querySelector("body").style.color = "white";
+            }
+            else {
+                document.querySelector("body").style.backgroundColor = "white";
+                document.querySelector("body").style.color = "black";
+            }
+        }
+    </script>
+</body>
+
+</html>

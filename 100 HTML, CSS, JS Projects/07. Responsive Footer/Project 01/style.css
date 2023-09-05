@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+footer {
+    padding: 50px 25px;
+    background-color: #000;
+    color: #6d6d6d;
+    margin-top: auto;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 20px;
+}
+
+.footer-top h5 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-top ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li {
+    transition: color 0.3s;
+}
+
+ul li:hover {
+    color: #fff;
+}
+
+hr {
+    border: none;
+    margin: 25px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-bottom ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
