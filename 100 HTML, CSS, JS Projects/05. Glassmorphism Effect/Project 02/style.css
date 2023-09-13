@@ -42,11 +42,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 0;
     width: 100%;
     padding: 1.5rem 3.5rem;
     color: #fff;
-    background-color: rgba(40, 40, 40, 0.5);
+    background-color: rgba(61, 61, 61, 0.3);
     backdrop-filter: blur(5px);
     z-index: 9;
 }
@@ -63,7 +62,6 @@ nav ul {
 }
 
 .container {
-    margin-top: 75px;
     max-width: 100%;
     margin-inline: auto;
 }
@@ -71,43 +69,36 @@ nav ul {
 section {
     position: relative;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
     isolation: isolate;
-}
-
-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
 }
 
 h1 {
     font-size: 3rem;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .section-1 {
-    background: url('https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_640.jpg') no-repeat center;
-    background-size: cover;
+    background: url('https://cdn.pixabay.com/photo/2018/03/12/20/07/maldives-3220702_640.jpg') no-repeat center;
+    background-size: contain;
 }
 
 .section-2 {
-    background: url('https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_640.jpg') no-repeat center;
-    background-size: cover;
+    background: url('https://cdn.pixabay.com/photo/2023/03/06/17/02/ship-7833921_640.jpg') no-repeat center;
+    background-size: contain;
 }
 
 .section-3 {
-    background: url('https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_640.jpg') no-repeat center;
-    background-size: cover;
+    background: url('https://cdn.pixabay.com/photo/2021/10/23/23/27/dead-sea-6736592_640.jpg') no-repeat center;
+    background-size: contain;
 }
 
 .section-4 {
-    background: url('https://cdn.pixabay.com/photo/2018/09/19/23/03/sunset-3689760_640.jpg') no-repeat center;
-    background-size: cover;
+    background: url('https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg') no-repeat center;
+    background-size: contain;
 }
