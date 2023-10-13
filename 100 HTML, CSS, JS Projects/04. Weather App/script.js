@@ -8,7 +8,7 @@ searchBtn.addEventListener("click", () => {
         weatherInfo.innerHTML = "&#42;Input field is required.".fontcolor('red');
     }
     else {
-        const apiKey = "API_Key";
+        const apiKey = "aac49b9077eb4a821e39072e6a069303";
 
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`)
             .then(response => response.json())

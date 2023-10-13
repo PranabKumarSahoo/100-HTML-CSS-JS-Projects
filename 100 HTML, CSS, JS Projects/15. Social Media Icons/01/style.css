@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    place-items: center;
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.container .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.container .icon:hover span,
+.container .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container .facebook:hover,
+.container .facebook:hover .tooltip,
+.container .facebook:hover .tooltip::before {
+    background: #0072b1;
+    color: #ffffff;
+}
+
+.container .twitter:hover,
+.container .twitter:hover .tooltip,
+.container .twitter:hover .tooltip::before {
+    background: #00acee;
+    color: #ffffff;
+}
+
+.container .instagram:hover,
+.container .instagram:hover .tooltip,
+.container .instagram:hover .tooltip::before {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: #ffffff;
+}
+
+.container .github:hover,
+.container .github:hover .tooltip,
+.container .github:hover .tooltip::before {
+    background: #171515;
+    color: #ffffff;
+}
+
+.container .youtube:hover,
+.container .youtube:hover .tooltip,
+.container .youtube:hover .tooltip::before {
+    background: #0088CC;
+    color: #ffffff;
+}

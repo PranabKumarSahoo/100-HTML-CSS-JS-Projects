@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#btn {
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 0;
+    background-color: violet;
+    box-shadow: 5px 5px 0 #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+#colorCode {
+    font-size: large;
+    font-weight: bold;
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+}
+
+body {
+    background: #000;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.skill {
+    padding: 20px 0;
+    position: relative;
+    width: 300px;
+}
+
+.type {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.outer-bar,
+.inner-bar {
+    height: 10px;
+    border-radius: 100px;
+}
+
+.outer-bar {
+    margin-top: 15px;
+    background: #444;
+}
+
+.inner-bar {
+    animation: progress 1s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+.inner-bar-html {
+    width: 100%;
+    background: #18f8f8;
+}
+
+.inner-bar-css {
+    width: 90%;
+    background: #f118f8;
+}
+
+.inner-bar-js {
+    width: 80%;
+    background: #F8DD18;
+}
+
+.inner-bar-react {
+    width: 50%;
+    background: #8718F8;
+}
+
+.inner-bar-sql {
+    width: 60%;
+    background: #f87218;
+}
+
+@keyframes progress {
+    to {
+        transform: scaleX(1);
+    }
+}
