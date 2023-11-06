@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    padding: 50px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+}
+
+.form-item {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-item input {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background: transparent;
+    border: solid 1px #ccc;
+    outline: none;
+    transition: all .3s ease;
+    padding: 0 15px;
+}
+
+.form-item input:focus {
+    border-color: blue;
+}
+
+.form-item label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 17px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #fff;
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease;
+}
+
+.form-item input:focus+label,
+.form-item input:valid+label {
+    font-size: 11px;
+    top: -5px;
+}
+
+.form-item input:focus+label {
+    color: #4B70E2;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -110px;
+    top: -25px;
+}
+
+.show-password input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.show-password label {
+    font-size: 12px;
+    color: #333;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginBtn {
+    cursor: pointer;
+    padding: 15px 35px;
+    border: none;
+    width: 300px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #4B70E2;
+    box-shadow: 5px 5px 15px #a5a5a5;
+    color: #fff;
+    transition: .3s;
+}
+
+.loginBtn:active {
+    transform: translateY(2px);
+}
+
+.loginBtn svg {
+    width: 15px;
+    position: relative;
+    top: 2px;
+    left: -10px;
+}

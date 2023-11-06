@@ -1,6 +1,8 @@
 const searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
 const weatherInfo = document.getElementById("weatherInfo");
+const locationError = document.getElementById("location-error");
+const weatherIcon = document.getElementById("weatherIcon");
 
 searchBtn.addEventListener("click", () => {
     const cityName = cityInput.value;
@@ -20,10 +22,17 @@ searchBtn.addEventListener("click", () => {
                 const humid = data.main.humidity + "%";
                 const weather = `<p><b>City:</b> ${cityName}</p><p><b>Description:</b> ${description}</p><p><b>Temperature:</b> ${temperature}</p><p><b>Wind Speed:</b> ${windspeed}</p><p><b>Humidity:</b> ${humid}</p>`;
                 weatherInfo.innerHTML = weather;
+
+                const weatherIconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+                weatherIcon.src = weatherIconUrl;
+
+                locationError.style.display = "none";
             })
             .catch(error => {
                 console.error("Error fetching weather data:", error);
-                weatherInfo.innerHTML = "&#42;Invalid city name.".fontcolor('red');
+                locationError.style.display = "block";
+                weatherInfo.innerHTML = "";
+                weatherIcon.src = "";
             });
     }
 });
