@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 2rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.mic-toggle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: crimson;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+.mic-toggle span {
+    font-size: 30px;
+}
+
+.playback {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+}
